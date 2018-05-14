@@ -1,15 +1,15 @@
 # Actividad 1 de Intro a Javascript y jQuery
 
-Para la siguiente actividad clona este repositorio y trabaja en cada uno de los archivos respectivamente.
+Para la siguiente actividad clona este repositorio y trabaja en cada una de las carpetas respectivas.
 Cada ejercicio viene con su archivo, el cual contiene información relevante para poder realizar el ejercicio.
 
 ## Competenecias importantes de esta actividad
 
-- Agregar jquery a una página web
+- Agregar jQuery a una página web
 - Conocer la importancia del orden de carga
 - Seleccionar elementos en base a nombre, id o clase
   - Selecccionar un elemento hijo utilizando .child
-- Agregar y remover clases desde el inspector de elementos utilizando jquery
+- Agregar y remover clases desde el inspector de elementos utilizando jQuery
 - Añadir un evento a un selector
 - Modificar un elemento de la página a partir de un selector y un evento
 - Transformación de tipos de datos
@@ -17,10 +17,10 @@ Cada ejercicio viene con su archivo, el cual contiene información relevante par
 
 ## Ejercicios a desarrollar
 
-1. Tener una página básica que ocupe jquery pero este no esté cargado, el alumno
-debe descargar jquery o el CDN para arreglar la página.
+1. Tener una página básica que ocupe jQuery pero este no esté cargado, el alumno
+debe descargar jQuery o el CDN para arreglar la página.
 2. Tener una página donde se aplique un efecto sobre un elemento pero que este
-no funcione porque jquery se carga después del código anterior.
+no funcione porque jQuery se carga después del código anterior.
 3. Crear un listado de ejercicios donde haya que seleccionar elementos en base
 a los criterios establecidos, dar el link a la documentación para que aprendan
 a utilizarla para seleccionar elemento.
