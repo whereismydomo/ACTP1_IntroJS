@@ -8,6 +8,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <p> clic !! </p>
@@ -15,5 +16,11 @@
     <p> clic !! </p>
     <h3> no clic !! </h3>
     <p> clic !! </p>
+    <script>
+      $("p").on("click", function(){
+        alert("clcik");
+         return false;
+      })
+    </script>
   </body>
 </html>

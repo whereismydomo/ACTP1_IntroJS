@@ -1,12 +1,12 @@
 <!--
   Sin modificar el HTML debes escribir los selectores que se necesitan para cada elemento pedido.
 
-  Seleccionar el H1 y cambiar el color de texto a rojo
-  Seleccionar la sección 1 (section-1) y agregar el color de fondo amarillo
-  Seleccionar el elemennto con clase counter e incrementar en 10 su valor
-  Seleccionar el elemento con id row-3 y agregar el color de fondo gris, agregar una transición de 1 segundos
-  Seleccionar el h1 dentro del div y duplicar su tamaño
-  Seleccionar el último row dentro de la tabla (sin utilizar el id, puesto que el número de elementos podría cambiar) y agregar color de fondo rojo
+  1-Seleccionar el H1 y cambiar el color de texto a rojo
+  2-Seleccionar la sección 1 (section-1) y agregar el color de fondo amarillo
+  3-Seleccionar el elemennto con clase counter e incrementar en 10 su valor
+  4-Seleccionar el elemento con id row-3 y agregar el color de fondo gris, agregar una transición de 1 segundos
+  5-Seleccionar el h1 dentro del div y duplicar su tamaño
+  6-Seleccionar el último row dentro de la tabla (sin utilizar el id, puesto que el número de elementos podría cambiar) y agregar color de fondo rojo
 -->
 
 <!DOCTYPE html>
@@ -14,14 +14,24 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
+  <style>
+  .rojo{
+    color: red;
+  }
+  .colorFondo{
+    background-color: grey;
+    transition: 2s;
+  }
+ </style>
   <body>
     <h1> Hey !! </h1>
     <section class="section-1">
       <h1> Hey </h1>
       <span class="counter"> 101 </span>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    </div>
+    </section>
 
     <table>
       <tbody>
@@ -62,5 +72,25 @@
 
       </fieldset>
     </form>
+
+    <script>
+       //Ejercicio 1
+       $("h1").addClass("rojo");
+       //Ejercicio 2
+       $(".section-1").css("background-color", "yellow");
+       //Ejercicio 3 
+       contador = $(".counter").text();
+       contador = parseInt(contador);
+       $(".counter").text(contador + 10);
+       //Ejercicio 4
+       $("#row-3").on("click", function(){
+          $("#row-3").addClass("colorFondo");
+        });
+       //Ejercicio 5
+       $(".section-1 h1").css("font-size", "32px");
+       //Ejercicio 6
+       $(".row").last().css( "background-color", "red" );
+
+     </script>
   </body>
 </html>
